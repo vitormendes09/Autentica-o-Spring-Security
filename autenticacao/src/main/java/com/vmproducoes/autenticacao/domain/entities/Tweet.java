@@ -1,5 +1,6 @@
 package com.vmproducoes.autenticacao.domain.entities;
 import com.vmproducoes.autenticacao.contracts.entities.ITweet;
+import com.vmproducoes.autenticacao.contracts.entities.IUser;
 
 import java.time.LocalDateTime;
 
@@ -46,10 +47,11 @@ public class Tweet implements ITweet {
         return id;
     }
 
-    @Override
-    public User getUser() {
+    @Override   
+    public IUser getUser() {
         return user;
     }
+
 
     @Override
     public String getContent() {

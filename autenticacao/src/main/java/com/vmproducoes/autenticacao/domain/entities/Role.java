@@ -45,4 +45,21 @@ public class Role implements IRole {
     public void setName(String name) {
         this.name = name;
     }
+
+    public enum Valeues{
+        Admin(1l),
+        Basic(2l),;
+
+
+        long roleId;
+
+        Valeues(long roleId) {
+            this.roleId = roleId;
+        
+        }
+
+        public long getRoleId() {
+            return roleId;
+        }
+    }
 }
